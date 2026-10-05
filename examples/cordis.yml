@@ -1,0 +1,9 @@
+# Example dsh composition config for dsh-tool-redis.
+# Keep credentials in a secret manager/environment-backed deployment config;
+# URLs with passwords are redacted in every tool output.
+
+- name: 'github:LJH-snow/dsh-tool-redis'
+  config:
+    # url: 'redis://127.0.0.1:6379'
+    urlEnv: 'REDIS_URL'
+    # commandTimeoutMs: 5000

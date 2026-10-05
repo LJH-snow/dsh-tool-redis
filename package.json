@@ -1,0 +1,63 @@
+{
+  "name": "@libai168/dsh-tool-redis",
+  "description": "Redis inspection and guarded write tools for DeepSeek Harness: server info, key scanning, key reads, and explicit SET/EXPIRE/DEL controls",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^6.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@types/node": "^26.2.0",
+    "typescript": "^5.5.0",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "awesome-dsh-plugin",
+    "cordis",
+    "redis",
+    "cache",
+    "key-value",
+    "database",
+    "agent",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LJH-snow/dsh-tool-redis.git"
+  },
+  "homepage": "https://github.com/LJH-snow/dsh-tool-redis#readme"
+}
